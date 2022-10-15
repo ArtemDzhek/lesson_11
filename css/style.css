@@ -1,0 +1,220 @@
+@charset "UTF-8";
+.wall {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/depositphotos_201831692-stock-illustration-decorative-oriental-seamless-pattern-traditional.jpeg");
+}
+
+.painting {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(35, 79, 222);
+  border: 14px double chocolate;
+  box-shadow: 8px 8px 24px 0px rgb(0, 0, 0) inset;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.painting__frame {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(100deg);
+  width: 100px;
+  height: 200px;
+  left: 50%;
+  top: 75%;
+  background-color: rgb(6, 98, 2);
+  border-radius: 54% 46% 0% 100%/46% 100% 0% 54%;
+}
+.painting__frame:hover ~ .mushroom {
+  display: block;
+  top: 250px;
+  transition: 1s;
+}
+.painting__earth {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(100deg);
+  width: 100px;
+  height: 220px;
+  left: 20%;
+  top: 75%;
+  background-color: rgb(3, 126, 7);
+  border-radius: 54% 46% 0% 100%/46% 100% 0% 54%;
+}
+.painting__earth-1 {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(100deg);
+  width: 100px;
+  height: 250px;
+  left: 10%;
+  top: 75%;
+  background-color: rgb(6, 41, 7);
+  border-radius: 54% 46% 0% 100%/46% 100% 0% 54%;
+}
+.painting__earth-2 {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(90deg);
+  width: 100px;
+  height: 300px;
+  left: 70%;
+  top: 68%;
+  background-color: rgb(10, 199, 16);
+  border-radius: 54% 46% 0% 100%/46% 100% 0% 54%;
+}
+.painting__earth-3 {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(100deg);
+  width: 100px;
+  height: 150px;
+  left: 76%;
+  top: 79%;
+  background-color: rgb(3, 126, 7);
+  border-radius: 54% 46% 0% 100%/46% 100% 0% 54%;
+}
+.painting .sun {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  left: 76%;
+  top: 0;
+  background-color: rgb(250, 178, 24);
+}
+.painting .sun::after {
+  content: "Знайди зайку з нетверезим водієм)";
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 350px;
+  right: 50px;
+  top: 20px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.painting .sun__sunbeam {
+  display: block;
+  position: absolute;
+  transform: rotate(100deg);
+  width: 140px;
+  height: 1px;
+  right: 1%;
+  top: 120px;
+  background-color: rgb(250, 178, 24);
+}
+.painting .sun__sunbeam::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(72deg);
+  width: 145px;
+  height: 1px;
+  right: 40px;
+  top: 110px;
+  background-color: rgba(250, 178, 24, 0.704);
+}
+.painting .sun__sunbeam-1 {
+  display: block;
+  position: absolute;
+  transform: rotate(110deg);
+  width: 140px;
+  height: 1px;
+  right: 10%;
+  top: 120px;
+  background-color: rgb(250, 178, 24);
+}
+.painting .sun__sunbeam-1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(70deg);
+  width: 145px;
+  height: 1px;
+  right: 40px;
+  top: 110px;
+  background-color: rgba(250, 178, 24, 0.523);
+}
+.painting .sun__sunbeam-2 {
+  display: block;
+  position: absolute;
+  transform: rotate(150deg);
+  width: 190px;
+  height: 1px;
+  right: 45%;
+  top: 80px;
+  background-color: rgb(250, 178, 24);
+}
+.painting .sun__sunbeam-2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(145deg);
+  width: 100px;
+  height: 1px;
+  left: 20px;
+  top: -55px;
+  background-color: rgba(250, 178, 24, 0.561);
+}
+.painting .sun__sunbeam-3 {
+  display: block;
+  position: absolute;
+  transform: rotate(130deg);
+  width: 190px;
+  height: 1px;
+  right: 20%;
+  top: 120px;
+  background-color: rgb(250, 178, 24);
+}
+.painting .sun__sunbeam-3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(55deg);
+  width: 170px;
+  height: 1px;
+  right: 40px;
+  top: 110px;
+  background-color: rgba(250, 178, 24, 0.542);
+}
+.painting .sun__sunbeam-4 {
+  display: block;
+  position: absolute;
+  transform: rotate(70deg);
+  width: 140px;
+  height: 1px;
+  top: 120px;
+  background-color: rgb(250, 178, 24);
+}
+.painting .sun__sunbeam-4::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(70deg);
+  width: 145px;
+  height: 1px;
+  right: 35px;
+  top: 100px;
+  background-color: rgba(250, 178, 24, 0.598);
+}
+.painting .mushroom {
+  display: block;
+  position: absolute;
+  width: 145px;
+  height: 1px;
+  right: 145px;
+  top: 395px;
+  z-index: -1;
+}
+.painting .mushroom::after {
+  content: "і шо?";
+  position: absolute;
+  top: 35px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(196, 7, 7);
+}
